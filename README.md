@@ -1,6 +1,6 @@
 **Stacked Knowledge: A Library System** is a library management system with both a console and GUI interface, built with Python and MySQL. 
 
-**Project Structure:** OPAC/ contains two files: library.py which is the core backend handling all logic, database operations, OOP principles, parallel programming, and console menus, and lib_gui.py which is the GUI frontend built with tkinter.
+**Project Structure:** The project contains two files: library.py which is the core backend handling all logic, database operations, OOP principles, parallel programming, and console menus, and library_gui.py which is the GUI frontend built with tkinter.
 
 **Important Note:**
 The core logic and comprehensive implementation of OOP principles, event-driven programming, parallel programming, memory management, and more are all in **library.py.** Similarly, all database interactions and queries are also handled in library.py. Please refer to those files when grading both the technical and database portions of the project.
