@@ -2,13 +2,17 @@
 # CORE MODULE — Stacked Knowledge: A Library System
 # This is the main backend file of the library system.
 
+# # For the core logic and more comprehensive implementation of OOP principles, event-driven programming, parallel programming,
+# memory management, and more, please refer to 'library.py'. Similarly, Database interactions and 
+# queries are also handled in 'library.py'.
+# Please refer to this file when grading the technical and database portion of the project.
+
+# The GUI version of this system is in 'library_gui.py'.
+
 # REQUIREMENTS:
 # 1. Install dependencies via terminal/command prompt:  pip install mysql-connector-python
 # 2. XAMPP must be running with MySQL enabled.
 # 3. Database 'library_db' will be auto-created on first run.
-#
-# NOTE: The GUI version of this system is in 'library_gui.py'.
-#       For database and logic review, this is the file to read.
 # =============================================================
 
 from abc import ABC, abstractmethod
