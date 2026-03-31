@@ -1229,7 +1229,7 @@ def user_menu(user, lib):
         print("  3. Return Book")
         print("  4. Pay Fees")
         print("  5. My Dashboard")
-        print("  7. Logout")
+        print("  6. Logout")
         print("=" * 35)
         c = safe_input("> ").strip()
 
