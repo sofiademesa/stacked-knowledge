@@ -2,10 +2,11 @@
 # CORE MODULE — Stacked Knowledge: A Library System
 # This is the main backend file of the library system.
 
-# # For the core logic and more comprehensive implementation of OOP principles, event-driven programming, parallel programming,
-# memory management, and more, please refer to 'library.py'. Similarly, Database interactions and 
-# queries are also handled in 'library.py'.
-# Please refer to this file when grading the technical and database portion of the project.
+# For the core logic and more comprehensive implementation of OOP principles, event-driven programming, parallel programming,
+# memory management, and more, please refer to 'library.py'. 
+
+# Similarly, Database interactions and queries are also handled in 'library.py'.
+# Please refer to those file when grading the technical and database portion of the project.
 
 # The GUI version of this system is in 'library_gui.py'.
 
@@ -838,21 +839,59 @@ class Library:
 
     def _seed_default_books(self):
         defaults = [
-            ("Intro to Programming",      "Ada Lovelace",         "600", 3, 2020),
-            ("Philosophy 101",            "Aristotle",            "100", 2, None),
-            ("World History",             "Howard Zinn",          "900", 4, 1980),
-            ("Basic Science",             "Isaac Newton",         "500", 2, None),
-            ("English Literature",        "Shakespeare",          "800", 5, None),
-            ("Thinking, Fast and Slow",   "Daniel Kahneman",      "100", 5, 2011),
-            ("A Brief History of Time",   "Stephen Hawking",      "500", 6, 1988),
-            ("Sapiens",                   "Yuval Noah Harari",    "900", 8, 2011),
-            ("The Pragmatic Programmer",  "Hunt & Thomas",        "000", 4, 1999),
-            ("The Art of War",            "Sun Tzu",              "300", 7, 500),
-            ("The Language Instinct",     "Steven Pinker",        "400", 3, 1994),
-            ("The Story of Art",          "E.H. Gombrich",        "700", 5, 1950),
-            ("The God Delusion",          "Richard Dawkins",      "200", 6, 2006),
-            ("Don Quixote",               "Miguel de Cervantes",  "800", 4, 1605),
-            ("The Clean Coder",           "Robert C. Martin",     "600", 5, 2011),
+            ("Intro to Programming",       "Ada Lovelace",          "500", 3, 2020),
+            ("Philosophy 101",             "Aristotle",             "100", 2, None),
+            ("World History",              "Howard Zinn",           "900", 4, 1980),
+            ("Basic Science",              "Isaac Newton",          "500", 2, None),
+            ("English Literature",         "Shakespeare",           "800", 5, None),
+            ("Thinking, Fast and Slow",    "Daniel Kahneman",       "100", 5, 2011),
+            ("A Brief History of Time",    "Stephen Hawking",       "500", 6, 1988),
+            ("Sapiens",                    "Yuval Noah Harari",     "900", 8, 2011),
+            ("The Pragmatic Programmer",   "Hunt & Thomas",         "000", 4, 1999),
+            ("The Art of War",             "Sun Tzu",               "300", 7, 500),
+            ("The Language Instinct",      "Steven Pinker",         "400", 3, 1994),
+            ("The Story of Art",           "E.H. Gombrich",         "700", 5, 1950),
+            ("The God Delusion",           "Richard Dawkins",       "200", 6, 2006),
+            ("Don Quixote",                "Miguel de Cervantes",   "800", 4, 1605),
+            ("The Republic",               "Plato",                 "100", 5, 380),
+            ("Meditations",                "Marcus Aurelius",       "100", 6, 180),
+            ("Nicomachean Ethics",         "Aristotle",             "100", 4, 350),
+            ("Crime and Punishment",       "Fyodor Dostoevsky",     "800", 5, 1866),
+            ("War and Peace",              "Leo Tolstoy",           "800", 6, 1869),
+            ("1984",                       "George Orwell",         "800", 8, 1949),
+            ("Brave New World",            "Aldous Huxley",         "800", 7, 1932),
+            ("The Selfish Gene",           "Richard Dawkins",       "500", 6, 1976),
+            ("Guns, Germs, and Steel",     "Jared Diamond",         "900", 7, 1997),
+            ("The Origin of Species",      "Charles Darwin",        "500", 5, 1859),
+            ("Cosmos",                     "Carl Sagan",            "500", 8, 1980),
+            ("The Feynman Lectures",       "Richard Feynman",       "500", 4, 1963),
+            ("Relativity",                 "Albert Einstein",       "500", 3, 1916),
+            ("The Prince",                 "Niccolò Machiavelli",   "300", 5, 1532),
+            ("The Wealth of Nations",      "Adam Smith",            "300", 4, 1776),
+            ("The Communist Manifesto",    "Marx & Engels",         "300", 6, 1848),
+            ("On Liberty",                 "John Stuart Mill",      "300", 4, 1859),
+            ("Social Contract",            "Jean-Jacques Rousseau", "300", 3, 1762),
+            ("Being and Time",             "Martin Heidegger",      "100", 2, 1927),
+            ("Thus Spoke Zarathustra",     "Friedrich Nietzsche",   "100", 4, 1883),
+            ("The Iliad",                  "Homer",                 "800", 5, 750),
+            ("The Odyssey",                "Homer",                 "800", 6, 720),
+            ("Hamlet",                     "William Shakespeare",   "800", 7, 1603),
+            ("The Divine Comedy",          "Dante Alighieri",       "800", 5, 1320),
+            ("Pride and Prejudice",        "Jane Austen",           "800", 8, 1813),
+            ("Moby Dick",                  "Herman Melville",       "800", 4, 1851),
+            ("The Great Gatsby",           "F. Scott Fitzgerald",   "800", 7, 1925),
+            ("To Kill a Mockingbird",      "Harper Lee",            "800", 9, 1960),
+            ("The Brothers Karamazov",     "Fyodor Dostoevsky",     "800", 5, 1880),
+            ("Clean Code",                 "Robert C. Martin",      "600", 7, 2008),
+            ("Design Patterns",            "Gang of Four",          "600", 4, 1994),
+            ("The Mythical Man-Month",     "Fred Brooks",           "600", 5, 1975),
+            ("Code Complete",              "Steve McConnell",       "600", 6, 1993),
+            ("You Don't Know JS",          "Kyle Simpson",          "600", 5, 2014),
+            ("Refactoring",                "Martin Fowler",         "600", 5, 1999),
+            ("Thinking in Systems",        "Donella Meadows",       "000", 6, 2008),
+            ("Gödel, Escher, Bach",        "Douglas Hofstadter",    "500", 5, 1979),
+            ("The Art of Learning",        "Josh Waitzkin",         "100", 6, 2007),
+            ("The Clean Coder",            "Robert C. Martin",      "600", 5, 2011)
         ]
         for t, a, d, c, y in defaults:
             cur = self.db.execute(

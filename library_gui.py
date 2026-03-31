@@ -3,11 +3,11 @@
 # This file handles the graphical user interface (GUI) only.
 
 # For the core logic and more comprehensive implementation of OOP principles, event-driven programming, parallel programming,
-# memory management, and more, please refer to 'library.py'.
-#
-# Database interactions and queries are also handled in 'library.py'.
-# Please refer to that file when grading the database portion of the project.
-#
+# memory management, and more, please refer to 'library.py'. 
+
+# Similarly, Database interactions and queries are also handled in 'library.py'.
+# Please refer to those file when grading the technical and database portion of the project.
+
 # REQUIREMENTS:
 # 1. 'library.py' must be in the same directory as this file.
 # 2. XAMPP must be running with MySQL enabled before starting.
