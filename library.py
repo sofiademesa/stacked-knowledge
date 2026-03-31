@@ -1233,7 +1233,7 @@ def user_menu(user, lib):
         print("=" * 35)
         c = safe_input("> ").strip()
 
-        if c == "7":
+        if c == "6":
             break
         elif c in event_map:
             dispatcher.emit(event_map[c])
